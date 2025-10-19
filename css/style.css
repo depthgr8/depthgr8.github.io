@@ -1,0 +1,222 @@
+/* General Body and Container Styles */
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.main-container {
+    max-width: 940px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* ASCII Art Header */
+pre {
+    display: block;
+    color: #057e91;
+    padding: 15px;
+    font-size: 15px;
+    line-height: 1.2;
+    text-align: center;
+    word-break: break-all;
+    word-wrap: break-word;
+    background-color: #fff;
+    border: 0px solid #ccc;
+    font-family: monospace;
+}
+
+/* Typography */
+h1 {
+    font-family: Roboto, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    color: #04817b;
+    margin-bottom: 10px;
+}
+
+h2, h3, h4, h5, h6 {
+    font-family: Raleway, Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    font-weight: normal;
+    color: #000000;
+    text-align: justify;
+}
+
+p, li {
+    font-family: Poppins, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    text-align: justify;
+}
+
+a {
+    text-decoration: none;
+    color: #0d99c4;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #097290;
+    text-decoration: underline;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+.emoji {
+    font-size: 18px;
+}
+
+/* Footer */
+footer {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+}
+
+/* Navigation Bar Styles */
+.nav-bar {
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #eee;
+}
+
+.nav-item {
+    margin: 0 20px;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    padding: 5px 0;
+}
+
+.nav-item:hover, .nav-item.active {
+    color: #04817b;
+    border-bottom: 2px solid #04817b;
+}
+
+/* Generic Section Styles */
+.content-section {
+    padding: 40px 0;
+}
+
+.education-section p {
+    text-align: center;
+}
+
+
+.content-section p {
+    text-align: center;
+}
+
+/* Card Layout Styles (for Projects and Education) */
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.card h4 {
+    margin-top: 0;
+    color: #04817b;
+    text-align: left;
+}
+
+.card p {
+    font-size: 15px;
+    color: #666;
+    text-align: left;
+}
+
+.card a {
+    font-weight: bold;
+    color: #0d99c4;
+}
+
+/* About Section */
+.about-section p {
+    max-width: 700px;
+    margin: 0 auto 20px auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+/* Blog/Placeholder Section */
+.placeholder-section {
+    padding: 80px 0;
+    text-align: center;
+}
+
+.placeholder-section p {
+    font-size: 1.2em;
+    color: #777;
+}
+
+/* Contact Section */
+.contact-section {
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact-section p {
+    max-width: 600px;
+    margin: 0 auto 25px auto;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+.contact-section .email-link {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #04817b;
+}
+
+/* Home Section Alignment */
+.content-section#home h2,
+.content-section#home h3,
+.content-section#home p {
+    text-align: left;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 20px;
+    }
+    h1 { font-size: 26px; }
+    .nav-item { margin: 0 10px; font-size: 15px; }
+    pre { font-size: 10px; }
+}
+
+@media (max-width: 480px) {
+    .main-container { padding: 15px; margin: 10px; }
+    h1 { font-size: 22px; }
+    .nav-bar { overflow-x: auto; white-space: nowrap; }
+    .nav-item { margin: 0 15px; }
+    pre { font-size: 6px; overflow-x: auto; }
+}

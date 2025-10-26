@@ -4,12 +4,12 @@ body {
     font-family: 'Poppins', 'Segoe UI', Arial, Helvetica, sans-serif;
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 0px 12px 0px 12px;
     background-color: #fff;
 }
 
 .main-container {
-    max-width: 940px;
+    max-width: 700px;
     margin: 0 auto;
     background-color: #ffffff;
     padding: 30px;
@@ -22,7 +22,7 @@ pre {
     display: block;
     color: #057e91;
     padding: 15px;
-    font-size: 8px;
+    font-size: 6px;
     line-height: 1.2;
     text-align: center;
     word-break: break-all;
@@ -30,6 +30,7 @@ pre {
     background-color: #fff;
     border: 0px solid #ccc;
     font-family: monospace;
+    margin: 5px 5px 5px 5px;
     font-family: 'Roboto Mono', 'Source Code Pro', 'Inconsolata', monospace;
 }
 
@@ -55,6 +56,10 @@ h2, h3, h4, h5, h6 {
     line-height: 1.5;
     font-weight: normal;
     color: #000000;
+    text-align: justify;
+    font-family: Poppins, 'Times New Roman', Times, serif;
+    font-family: 'Poppins', 'Times New Roman', Times, serif;
+    line-height: 1.8;
     text-align: justify;
 }
 
@@ -215,16 +220,16 @@ footer {
     text-align: left;
 }
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .main-container {
         padding: 20px;
     }
     h1 { font-size: 26px; }
     .nav-item { margin: 0 10px; font-size: 15px; }
-    pre { font-size: 10px; }
+    pre { font-size: 6px; }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 360px) {
     .main-container { padding: 15px; margin: 10px; }
     h1 { font-size: 22px; }
     .nav-bar { overflow-x: auto; white-space: nowrap; }
@@ -235,19 +240,20 @@ footer {
 
 /* Blog Post Styles */
 .blog-post {
-    padding: 25px;
+    padding-top: 0;
     margin-bottom: 30px;
 }
 
 .blog-post header {
     padding-bottom: 15px;
     margin-bottom: 20px;
-    font-size: 0.8em;
+    font-size: 0.6em;
 }
 
 .post-title {
-    font-size: 1.4em;
-    color: #333;
+    font-size: 1.6em;
+    font-style: italic;
+    color: #04817b;
     margin: 0;
     text-align: left; 
 }
@@ -260,9 +266,12 @@ footer {
 
 .post-content p {
     text-align: justify;
-    font-size: 0.8em;
+    font-size: 1em;
     margin-bottom: 1em;
     color: #444;
+    font-family: Poppins, 'Times New Roman', Times, serif;
+    line-height: 1.8;
+    text-align: justify;
 }
 
 .post-content pre {

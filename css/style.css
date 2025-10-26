@@ -22,7 +22,7 @@ pre {
     display: block;
     color: #057e91;
     padding: 15px;
-    font-size: 10px;
+    font-size: 8px;
     line-height: 1.2;
     text-align: center;
     word-break: break-all;
@@ -30,6 +30,7 @@ pre {
     background-color: #fff;
     border: 0px solid #ccc;
     font-family: monospace;
+    font-family: 'Roboto Mono', 'Source Code Pro', 'Inconsolata', monospace;
 }
 
 /* Main Header Container */

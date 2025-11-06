@@ -30,6 +30,7 @@ pre {
     background-color: #fff;
     border: 0px solid #ccc;
     font-family: monospace;
+    font-weight: bold;
     margin: 5px 5px 5px 5px;
     font-family: 'Roboto Mono', 'Source Code Pro', 'Inconsolata', monospace;
 }
